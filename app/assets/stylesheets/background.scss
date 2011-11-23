@@ -1,0 +1,65 @@
+#headline {
+  background-color: #c6c6c6;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#background-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 0;
+  background: -moz-linear-gradient(top, #a5a5a5 0%, rgba(213, 213, 213, 0) 74%, rgba(230, 230, 230, 0) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a5a5a5), color-stop(74%, rgba(213, 213, 213, 0)), color-stop(100%, rgba(230, 230, 230, 0)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #a5a5a5 0%, rgba(213, 213, 213, 0) 74%, rgba(230, 230, 230, 0) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #a5a5a5 0%, rgba(213, 213, 213, 0) 74%, rgba(230, 230, 230, 0) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #a5a5a5 0%, rgba(213, 213, 213, 0) 74%, rgba(230, 230, 230, 0) 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #a5a5a5 0%, rgba(213, 213, 213, 0) 74%, rgba(230, 230, 230, 0) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a5a5a5', endColorstr='#00e6e6e6',GradientType=0 );
+  /* IE6-9 */
+}
+
+#background-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  z-index: 0;
+  background: -moz-linear-gradient(top, rgba(230, 230, 230, 0) 0%, rgba(213, 213, 213, 0) 26%, #a5a5a5 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(230, 230, 230, 0)), color-stop(26%, rgba(213, 213, 213, 0)), color-stop(100%, #a5a5a5));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, rgba(230, 230, 230, 0) 0%, rgba(213, 213, 213, 0) 26%, #a5a5a5 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, rgba(230, 230, 230, 0) 0%, rgba(213, 213, 213, 0) 26%, #a5a5a5 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, rgba(230, 230, 230, 0) 0%, rgba(213, 213, 213, 0) 26%, #a5a5a5 100%);
+  /* IE10+ */
+  background: linear-gradient(top, rgba(230, 230, 230, 0) 0%, rgba(213, 213, 213, 0) 26%, #a5a5a5 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e6e6e6', endColorstr='#a5a5a5',GradientType=0 );
+  /* IE6-9 */
+}
+
+#bottomline {
+  background-color: #c6c6c6;
+  width: 100%;
+  height: 40px;
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+}

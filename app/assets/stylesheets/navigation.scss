@@ -1,0 +1,145 @@
+#navcontainer {
+  top: 0px;
+  height: 57px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+}
+
+#navbox {
+  top: 7px;
+  position: relative;
+  min-width: 1030px;
+  width: 1030px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #c6c6c6;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  background: white;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, white 1%, #d6d6d6 42%, #c6c6c6 75%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, white), color-stop(42%, #d6d6d6), color-stop(75%, #c6c6c6));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, white 1%, #d6d6d6 42%, #c6c6c6 75%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, white 1%, #d6d6d6 42%, #c6c6c6 75%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, white 1%, #d6d6d6 42%, #c6c6c6 75%);
+  /* IE10+ */
+  background: linear-gradient(top, #ffffff 1%, #d6d6d6 42%, #c6c6c6 75%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#c6c6c6',GradientType=0 );
+  /* IE6-9 */
+  -webkit-box-shadow: 2px 2px 4px 2px #7c7c7c;
+  -moz-box-shadow: 2px 2px 4px 2px #7c7c7c;
+  box-shadow: 2px 2px 4px 2px #7c7c7c;
+}
+
+#navigation {
+  top: -51px;
+  position: relative;
+  min-width: 1030px;
+  width: 1030px;
+  height: 57px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0;
+  padding-right: 0;
+}
+
+li.m:hover {
+  color: #ffffff;
+  top: -1px;
+  position: relative;
+  height: 37px;
+  margin: 0;
+  padding: 22px 20px 0 20px;
+  z-index: 10;
+  border-color: #a64d5a;
+  -webkit-border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  border-top-left-radius: 8px;
+  -webkit-border-top-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  border-top-right-radius: 8px;
+  -webkit-box-shadow: 2px 2px 4px 2px #7c7c7c;
+  -moz-box-shadow: 2px 2px 4px 2px #7c7c7c;
+  box-shadow: 2px 2px 4px 2px #7c7c7c;
+  background: #a64d5a;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #a64d5a 0%, #c0858a 0%, #c0858a 1%, #b3676f 21%, #9e3c4e 56%, #91203d 85%, #8e1638 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a64d5a), color-stop(0%, #c0858a), color-stop(1%, #c0858a), color-stop(21%, #b3676f), color-stop(56%, #9e3c4e), color-stop(85%, #91203d), color-stop(100%, #8e1638));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #a64d5a 0%, #c0858a 0%, #c0858a 1%, #b3676f 21%, #9e3c4e 56%, #91203d 85%, #8e1638 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #a64d5a 0%, #c0858a 0%, #c0858a 1%, #b3676f 21%, #9e3c4e 56%, #91203d 85%, #8e1638 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #a64d5a 0%, #c0858a 0%, #c0858a 1%, #b3676f 21%, #9e3c4e 56%, #91203d 85%, #8e1638 100%);
+  /* IE10+ */
+  background: linear-gradient(top, #a64d5a 0%, #c0858a 0%, #c0858a 1%, #b3676f 21%, #9e3c4e 56%, #91203d 85%, #8e1638 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a64d5a', endColorstr='#8e1638',GradientType=0 );
+  /* IE6-9 */
+}
+
+li.n:hover {
+  -webkit-border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+li {
+  display: block;
+  float: left;
+  margin-top: 7px;
+  padding: 15px 20px 15px 20px;
+  border-width: 1px;
+  border-color: #c6c6c6;
+}
+
+#logo {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.l {
+  border-left-style: solid;
+}
+
+.r {
+  border-right-style: solid;
+}
+
+.e {
+  visibility: hidden;
+  width: 7px;
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#help {
+  font-family: Arial;
+  font-weight: bold;
+  text-transform: capitalize;
+  display: inline-block;
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

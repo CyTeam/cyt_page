@@ -1,37 +1,52 @@
-﻿!!! 5
+!!!
 %html
   %head
-    %title 
-      cyt.ch  
-  %body
-    %h1#cyt_logo
+    %title
       cyt.ch
-    #body
+    %link{:href => "/assets/background.css?body=1", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/screen.css?body=1", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/content.css?body=1", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/navigation.css?body=1", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+  %body
+    #headline
+    #background-top
+    #background-bottom
+    #bottomline
+    #navcontainer
+      #navbox
       #navigation
+        %ul#logo
+          %li
+            %img{:alt => "cyt Logo", :src => "/assets/cyt_logo.png"}/
         %ul#main
-          %li home
-          %li produkte
-          %li dienstleistungen
-          %li über uns
-          %li community
-        
+          %li.r.l.m home
+          %li.r.m produkte
+          %li.r.m dienstleistungen
+          %li.r.m über uns
+          %li.r.m community
         %ul#help
-          %li login
-          %li hilfe
-       
-      #content
-        .content.largebox
-          %p
-            largebox
-          
-        .content.mediumbox
-          %p
-            mediumbox
-        
-        .content.smallbox
-          %p
-            smallbox
-              
-      #footer
-        %p
-          feedback
+          %li.l.m login
+          %li.l.n.m hilfe
+      /
+        <ul id='footer'>
+        <li>feedback</li>
+        </ul>
+    #maincontainer
+      /
+        <div id='content'>
+        <div class='content largebox'>
+        <p>
+        largebox
+        </p>
+        </div>
+        <div class='content mediumbox'>
+        <p>
+        mediumbox
+        </p>
+        </div>
+        <div class='content smallbox'>
+        <p>
+        smallbox
+        </p>
+        </div>
+        </div>
