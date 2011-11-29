@@ -1,7 +1,4 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #ededed;
-  font-family: Arial;
-  font-size: 100%;
-}
+﻿@import 'background';
+@import 'navigation';
+@import 'content';
+@import 'layout';

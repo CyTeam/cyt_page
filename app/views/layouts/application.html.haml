@@ -1,52 +1,54 @@
-!!!
+!!! 5
 %html
   %head
+    %link{"rel" => "stylesheet", "href" => "assets/screen.css", "type" => "text/css"}
+    %meta{ :charset => "utf-8" }
     %title
       cyt.ch
-    %link{:href => "/assets/background.css?body=1", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/assets/screen.css?body=1", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/assets/content.css?body=1", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
-    %link{:href => "/assets/navigation.css?body=1", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+
+
   %body
-    #headline
-    #background-top
-    #background-bottom
-    #bottomline
-    #navcontainer
-      #navbox
-      #navigation
-        %ul#logo
-          %li
-            %img{:alt => "cyt Logo", :src => "/assets/cyt_logo.png"}/
-        %ul#main
-          %li.r.l.m home
-          %li.r.m produkte
-          %li.r.m dienstleistungen
-          %li.r.m über uns
-          %li.r.m community
-        %ul#help
-          %li.l.m login
-          %li.l.n.m hilfe
-      /
-        <ul id='footer'>
-        <li>feedback</li>
-        </ul>
-    #maincontainer
-      /
-        <div id='content'>
-        <div class='content largebox'>
-        <p>
-        largebox
-        </p>
-        </div>
-        <div class='content mediumbox'>
-        <p>
-        mediumbox
-        </p>
-        </div>
-        <div class='content smallbox'>
-        <p>
-        smallbox
-        </p>
-        </div>
-        </div>
+    #background_container
+
+      #gradient_top
+      #gradient_bottom
+
+    #navigation_container
+      #headline
+      #navigation_position
+        #navigation
+          %ul#main
+            %li
+              %img{:alt => "cyt Logo", :src => "/assets/cyt_logo.png"}
+            %li
+              %a{:href => "#home"} home
+            %li
+              %a{:href => "#products"} produkte
+            %li
+              %a{:href => "#services"} dienstleistungen
+            %li
+              %a{:href => "#about_us"} über uns
+            %li
+              %a{:href => "#lcommunity"} community
+          %ul#second
+            %li.rounded_right
+              %a.rounded_right{:href => "#help"} hilfe
+            %li
+              %a{:href => "#login"} login
+
+    #content_container
+      #content
+        .largebox
+          %h2
+            Open Source
+          %p
+            Es gibt zahlreiche ausgereifte Programme, welche frei (open source) verfügbar sind. Doch wer garantiert den sicheren und reibungslosen Betrieb? Wir bieten professionellen Service und Support zu Open Source Software.
+            Dienstleistung
+
+            Sämtliche Programme, die wir anbieten, sind als Service verfügbar. Das heisst Sie müssen sich nicht um das Backup oder den Betrieb eines Servers kümmern. Ein Computer mit Internet-Zugang reicht und Sie haben sämtliche Unternehmensdaten zur Verfügung.
+            Entwicklung
+
+            Wenn es für Ihre Bedürfnisse noch kein geeignetes Programm gibt, entwickeln wir es nach Ihren Vorstellungen oder passen ein bestehendes Programm an Ihre Bedürfnisse an. Dank modernen Technologien und Entwicklungsmodellen ist die Individualentwicklung auch für kleine Unternehmen erschwinglich geworden.
+            Infrastruktur
+
+            Gerne beraten wir Sie bei Kauf, Planung und Umsetzung Ihrer Netzwerkinfrastruktur.
