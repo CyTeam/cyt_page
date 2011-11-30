@@ -1,14 +1,13 @@
 ﻿#content
-  height: 1000px
   padding-top: 0.5em
   +append(0.3)
   +column(23.2)
   +prepend(0.5)
-  positon: fixed
-  background-color: $light_grey
-  border: 1px solid #b3b3b2
+  min-height: 900px
+  background-color: $content_bkgd
+  border: 1px solid $border
   border-top-style: none
-  // +border-bottom-radius
+
   .content
     +prepend-top(0.6em)
     +append(0.4)
@@ -17,4 +16,4 @@
     +append-bottom(0.6em)
     +border-radius
     +box-shadow
-    background: #ffffff
+    background: $content

@@ -1,16 +1,15 @@
 ﻿body
   margin: 0
-  padding: 0
-  background-color: $medium_grey
+  background-color: $page_bkgd
   font-family: Arial
   font-size: 100%
+  width: 1280px
 
 #site_container
   +container
-  +showgrid
   position: relative
-  top: 10px
-  z-index: 1000
-  height: 1000px
-  overflow: visible
+  +prepend-top(1em)  
+  +append-bottom(1em)
+  +border-radius 
   +box-shadow
+  +showgrid

@@ -1,50 +1,42 @@
-#navigation_position
+#navigation
   +column(24)
-  position: relaltive
-  top: 0px
-  height: 52px
-  border: 1px solid #a0a0a0
-  z-index 1000
-  // needs latest Compass, add '@import "compass"' to your scss
+  border: 1px solid $border
   background-color: #ffffff // Old browsers
   +filter-gradient(#ffffff, #b3b3b2, vertical) // IE6-9
   +background-image(linear-gradient(top,  #ffffff 0%,#d1d1d1 62%,#b3b3b2 100%))
 
-  #navigation ul
+  ul
     display: inline
     font: 80% arial,sans-serif
     font-weight: bold
     text-transform: capitalize
-  
-  #main img
-    margin: 6px 0 0 0
-    padding: 9px 20px 10px
-  
-  #navigation li
-    display: inline
-    border: 1px none #a0a0a0
 
-  #main li
+  li
+    display: inline
+    border: 1px none $border
+
+  .main img
+    margin: 1em 0 0 0
+    padding: 0.3em 2em 0.85em
+
+  .main li
     float: left
     border-right-style: solid
-  
-  #second li
+
+  .second li
     float: right
     border-left-style: solid
-  
-  #navigation a:link,a:visited 
+
+  a:link,a:visited
     display: block
-    margin: 0
-    padding: 19px 20px 18px
+    padding: 1.5em
     color: #000000
     text-align: center
     text-decoration: none
-  
-  #navigation a:hover,a:active
-    border: 1px none #a0a0a0
+
+  a:hover,a:active
+    border: 1px none $border
     color: #ffffff
-    // needs latest Compass, add '@import "compass"' to your scss
     background-color: #c0858a // Old browsers
     +filter-gradient(#c0858a, #8e1638, vertical) // IE6-9
     +background-image(linear-gradient(top,  #c0858a 0%,#b3676f 37%,#91203d 75%,#8e1638 100%))
-    +box-shadow
