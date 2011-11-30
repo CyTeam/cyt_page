@@ -1,23 +1,36 @@
 ﻿// Basic color theme for layout
-
 // Basic layout color
-$basic_layout_color: #ffffff
-
-// Calculated colors form basic layout color
-$border: #a0a0a0
-$shadow: #7c7c7c
-
+$navigation: #ffffff
+$hover: #8e1638
+$hover_font: #ffffff
 $content: #ffffff
-$content_bkgd: #ededed
+$basic_background: #ffffff
 
-$page_bkgd: #f6f6f6
+// Calculated colors form basic layout colors
 
-$gradient_bkgd_light: #f6f6f6
-$gradient_bkgd_middle: #dcdcdc
-$gradient_bkgd_dark: #b2b2b2
+// Navigation bar
+$gradient_nav_light: $navigation
+$gradient_nav_middle: darken($gradient_nav_light, 14%)
+$gradient_nav_dark: darken($gradient_nav_light, 30%)
+
+// Background
+$page_bkgd: darken($basic_background, 5%)
+
+// Background gradients
+$gradient_bkgd_light: $page_bkgd
+$gradient_bkgd_middle: darken($basic_background, 14%)
+$gradient_bkgd_dark: darken($basic_background, 30%)
+
+// Content
+$content_box: $content
+$content_bkgd: darken($content, 7%)
+
+// Style element color
+$border: $gradient_nav_dark
+$shadow: darken($basic_background, 40%)
 
 
-// Forms definiton
+// Form styles
 
 // Default border radius
 $default-border-radius: 8px 
@@ -28,6 +41,3 @@ $default-box-shadow-h-offset: 1px
 $default-box-shadow-v-offset: 1px
 $default-box-shadow-blur: 10px
 $default-box-shadow-spread: 1px
-
-
-

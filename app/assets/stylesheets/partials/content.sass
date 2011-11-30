@@ -1,19 +1,22 @@
-﻿#content
-  padding-top: 0.5em
-  +append(0.3)
-  +column(23.2)
+﻿// content container
+#content
+  +append(0.5)
+  +column(23)
   +prepend(0.5)
   min-height: 900px
   background-color: $content_bkgd
   border: 1px solid $border
   border-top-style: none
+  +border-bottom-radius 
+  +box-shadow
 
-  .content
-    +prepend-top(0.6em)
-    +append(0.4)
-    +column(22.2)
-    +prepend(0.4)
-    +append-bottom(0.6em)
+  // content boxes
+  .largebox
+    +prepend-top(1.6em)
+    +append(0.5)
+    +prepend(0.5)
+    +append-bottom(1.6em)
     +border-radius
     +box-shadow
-    background: $content
+    border: 1px solid $border    
+    background: $content_box

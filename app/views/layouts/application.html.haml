@@ -1,13 +1,13 @@
 !!! 5
 %html
   %head
-    %link{"rel" => "stylesheet", "href" => "assets/screen.css", "type" => "text/css"}
     %meta{ :charset => "utf-8" }
+    = favicon_link_tag ("favicon.ico")
+    = stylesheet_link_tag("screen")
     %title
-      cyt.ch
+      cyt.ch GmbH
 
   %body
-
     #gradient_top
     #gradient_bottom
 
@@ -15,7 +15,7 @@
       #navigation
         %ul.main
           %li
-            %img{:alt => "cyt Logo", :src => "/assets/cyt_logo.png"}
+            = image_tag("cyt_logo.png", :alt => "cyt Logo")
           %li
             %a{:href => "#home"} home
           %li
@@ -27,14 +27,15 @@
           %li
             %a{:href => "#community"} community
         %ul.second
-          %li.rounded_right
+          %li
             %a.rounded_right{:href => "#help"} hilfe
           %li
             %a{:href => "#login"} login
+
       #content
-        .content
+        .largebox
           %p
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-        .content
+        .largebox
           %p
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

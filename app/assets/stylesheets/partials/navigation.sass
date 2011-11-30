@@ -1,42 +1,50 @@
+// navigation bar style
 #navigation
   +column(24)
   border: 1px solid $border
-  background-color: #ffffff // Old browsers
-  +filter-gradient(#ffffff, #b3b3b2, vertical) // IE6-9
-  +background-image(linear-gradient(top,  #ffffff 0%,#d1d1d1 62%,#b3b3b2 100%))
+  background-color: $gradient_nav_dark // Old browsers
+  +filter-gradient($gradient_nav_light, $gradient_nav_dark, vertical) // IE6-9
+  +background-image(linear-gradient(top,  $gradient_nav_light 0%,$gradient_nav_middle 55%,$gradient_nav_dark 100%))
+  font-weight: bold
+  text-transform: capitalize
+  +border-top-radius 
+  +box-shadow
 
+  // elements
   ul
     display: inline
-    font: 80% arial,sans-serif
-    font-weight: bold
-    text-transform: capitalize
 
   li
     display: inline
     border: 1px none $border
 
+  // logo
   .main img
     margin: 1em 0 0 0
-    padding: 0.3em 2em 0.85em
+    padding: 0.3em 2em 0.9em
 
+  // main
   .main li
     float: left
     border-right-style: solid
 
+  // help
   .second li
     float: right
     border-left-style: solid
 
-  a:link,a:visited
+  // hover
+  a:link,a:visited,a:focus
     display: block
     padding: 1.5em
+    outline: none
     color: #000000
-    text-align: center
     text-decoration: none
 
   a:hover,a:active
-    border: 1px none $border
-    color: #ffffff
-    background-color: #c0858a // Old browsers
-    +filter-gradient(#c0858a, #8e1638, vertical) // IE6-9
-    +background-image(linear-gradient(top,  #c0858a 0%,#b3676f 37%,#91203d 75%,#8e1638 100%))
+    color: $hover_font
+    background-color: $hover
+    +box-shadow
+  // rounded top corner for the help button
+  a.rounded_right:hover
+    +border-top-right-radius 
