@@ -1,17 +1,16 @@
 ﻿body
   margin: 0
   padding: 0
-  background-color: #ededed
+  background-color: $medium_grey
   font-family: Arial
   font-size: 100%
 
 #site_container
   +container
-  // +showgrid
+  +showgrid
   position: relative
-  top: 0
+  top: 10px
+  z-index: 1000
   height: 1000px
   overflow: visible
-  -webkit-box-shadow: 1px 1px 10px 1px #7c7c7c
-  -moz-box-shadow: 1px 1px 10px 1px #7c7c7c
-  box-shadow: 1px 1px 10px 1px #7c7c7c
+  +box-shadow

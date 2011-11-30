@@ -1,39 +1,27 @@
-﻿#background_container
+﻿#headline
   position: fixed
-  top: 0px
-  z-index: 0  
+  top: 0
+  z-index: 50
   width: 100%
-  height: 100%
-  margin: 0px
-  padding: 0px
-  
-  #headline
-    overflow: visible
-    position: inherit
-    top: 0
-    z-index: 50
-    width: 100%
-    height: 40px
-    margin: 0px
-    padding: 0px
-    background-color: #a0a0a0
-  
-  #gradient_top
-    position: inherit
-    top: 0
-    width: 100%
-    height: 200px
-    // needs latest Compass, add '@import "compass"' to your scss
-    background-color: #b2b2b2 // Old browsers
-    +filter-gradient(#b2b2b2, #ededed, vertical) // IE6-9
-    +background-image(linear-gradient(top,  #b2b2b2 0%,#dcdcdc 53%,#ededed 100%))
-  
-  #gradient_bottom
-    position: inherit
-    bottom: 0
-    width: 100%
-    height: 200px
-    // needs latest Compass, add '@import "compass"' to your scss
-    background-color: #ededed // Old browsers
-    +filter-gradient(#ededed, #b2b2b2, vertical) // IE6-9
-    +background-image(linear-gradient(top,  #ededed 0%,#dcdcdc 47%,#b2b2b2 100%))
+  height: 40px
+  background-color: #a0a0a0
+
+#gradient_top
+  position: fixed
+  top: 0
+  width: 100%
+  height: 200px
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: #b2b2b2 // Old browsers
+  +filter-gradient(#b2b2b2, $medium_grey, vertical) // IE6-9
+  +background-image(linear-gradient(top,  #b2b2b2 0%,#dcdcdc 53%,$medium_grey 100%))
+
+#gradient_bottom
+  position: fixed
+  bottom: 0
+  width: 100%
+  height: 200px
+  // needs latest Compass, add '@import "compass"' to your scss
+  background-color: $medium_grey // Old browsers
+  +filter-gradient($medium_grey, #b2b2b2, vertical) // IE6-9
+  +background-image(linear-gradient(top,  $medium_grey 0%,#dcdcdc 47%,#b2b2b2 100%))

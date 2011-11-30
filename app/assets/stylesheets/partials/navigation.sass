@@ -1,5 +1,6 @@
-#navigation_position.span24
-  position: relative
+#navigation_position
+  +column(24)
+  position: relaltive
   top: 0px
   height: 52px
   border: 1px solid #a0a0a0
@@ -8,16 +9,7 @@
   background-color: #ffffff // Old browsers
   +filter-gradient(#ffffff, #b3b3b2, vertical) // IE6-9
   +background-image(linear-gradient(top,  #ffffff 0%,#d1d1d1 62%,#b3b3b2 100%))
-  // -webkit-border-top-left-radius: 8px
-  // -moz-border-radius-topleft: 8px
-  // border-top-left-radius: 8px
-  // -webkit-border-top-right-radius: 8px
-  // -moz-border-radius-topright: 8px
-  // border-top-right-radius: 8px
-  // -webkit-box-shadow: 1px 1px 10px 1px #7c7c7c
-  // -moz-box-shadow: 1px 1px 10px 1px #7c7c7c
-  // box-shadow: 1px 1px 10px 1px #7c7c7c
-  
+
   #navigation ul
     display: inline
     font: 80% arial,sans-serif
@@ -53,10 +45,6 @@
     color: #ffffff
     // needs latest Compass, add '@import "compass"' to your scss
     background-color: #c0858a // Old browsers
-    @include filter-gradient(#c0858a, #8e1638, vertical) // IE6-9
-    @include background-image(linear-gradient(top,  #c0858a 0%,#b3676f 37%,#91203d 75%,#8e1638 100%))
-  
-  #navigation a.rounded_right:hover
-    // -webkit-border-top-right-radius: 8px
-    // -moz-border-radius-topright: 8px
-    // border-top-right-radius: 8px
+    +filter-gradient(#c0858a, #8e1638, vertical) // IE6-9
+    +background-image(linear-gradient(top,  #c0858a 0%,#b3676f 37%,#91203d 75%,#8e1638 100%))
+    +box-shadow
