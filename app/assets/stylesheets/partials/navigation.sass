@@ -1,6 +1,7 @@
 // navigation bar style
 #navigation
-  +column(24)
+  overflow: visible
+  +column(62)
   border: 1px solid $border
   background-color: $gradient_nav_dark // Old browsers
   +filter-gradient($gradient_nav_light, $gradient_nav_dark, vertical) // IE6-9
@@ -45,6 +46,7 @@
     color: $hover_font
     background-color: $hover
     +box-shadow
+  
   // rounded top corner for the help button
   a.rounded_right:hover
     +border-top-right-radius 

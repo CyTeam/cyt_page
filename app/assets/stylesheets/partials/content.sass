@@ -1,8 +1,7 @@
 ﻿// content container
 #content
-  +append(0.5)
-  +column(23)
-  +prepend(0.5)
+  +column(61)
+  +prepend(1)
   min-height: 900px
   background-color: $content_bkgd
   border: 1px solid $border
@@ -12,11 +11,30 @@
 
   // content boxes
   .largebox
-    +prepend-top(1.6em)
-    +append(0.5)
-    +prepend(0.5)
-    +append-bottom(1.6em)
+    +prepend(1)
+    +append(1)
+    +column(58)
+    +prepend-top(1em)  
     +border-radius
     +box-shadow
-    border: 1px solid $border    
+    background: $content_box
+      
+  .mediumbox
+    +prepend(1)
+    +append(1)
+    +column(38)
+    +prepend-top(1em)    
+    +border-radius
+    +box-shadow
+    
+    background: $content_box
+
+  .smallbox
+    +prepend(1)
+    +append(1)
+    +column(18)
+    +prepend-top(1em)    
+    +border-radius
+    +box-shadow
+   
     background: $content_box
