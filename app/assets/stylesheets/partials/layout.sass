@@ -1,11 +1,44 @@
-﻿body
+﻿
+body
   margin: 0
-  background-color: $page_bkgd
+  padding: 0
+  border: 0
+  width: 100%
+  min-width: 980px
+  overflow: visible
+  background: $page_bkgd
   font: 80% arial,sans-serif
 
-#site_container
-  +container
-  +prepend-top(1em)  
-  +append-bottom(1em)
-  position: relative
-  overflow: visible
+
+  #side_container
+    width: 1080px
+    margin-left: auto
+    margin-right: auto
+    overflow: visible
+    position: relative
+    left: -80px
+
+    #sidebar
+      float: left
+      width: 89px
+      position: relative
+
+    #sidebar_container
+      float: left
+      overflow: visible
+      position: relative
+      top: 63px
+      z-index: 99
+
+    #main_container
+      float: left
+      z-index: 100
+      width: 980px
+      overflow: visible
+      position: relative
+      top: 10px
+
+h2
+  border: 1px none $border
+  border-bottom-style: solid
+  

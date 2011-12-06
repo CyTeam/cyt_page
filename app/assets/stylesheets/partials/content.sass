@@ -1,40 +1,72 @@
 ﻿// content container
 #content
-  +column(61)
-  +prepend(1)
-  min-height: 900px
+  overflow: visible
+  width: 980px
+  height: 100%
+  display: inline-block
   background-color: $content_bkgd
   border: 1px solid $border
   border-top-style: none
-  +border-bottom-radius 
-  +box-shadow
+  border-bottom-style: none
+  padding-top: 1px
+  padding-bottom: 20px
 
-  // content boxes
-  .largebox
-    +prepend(1)
-    +append(1)
-    +column(58)
-    +prepend-top(1em)  
-    +border-radius
+  table
+    width: 980px
+    border-collapse: separate
+    border-spacing: 20px
+    margin: -20px 0
+
+  td
+    border: 1px solid $border
+    background-color: $content
+    padding: 0 10px
+    margin: 0
+    vertical-align: top
     +box-shadow
-    background: $content_box
-      
-  .mediumbox
-    +prepend(1)
-    +append(1)
-    +column(38)
-    +prepend-top(1em)    
     +border-radius
-    +box-shadow
+  
+  .img
+    padding: 20px
+    margin: 20px
     
-    background: $content_box
+  .references
+    height: 20px
+    width: 138px
+    padding: 0
+    margin: 0
+    overflow: hidden
 
-  .smallbox
-    +prepend(1)
-    +append(1)
-    +column(18)
-    +prepend-top(1em)    
-    +border-radius
-    +box-shadow
-   
-    background: $content_box
+    
+  .small
+    width: 320px
+    padding: 0 20px
+    
+  .medium
+    width: 640px
+ 
+  .large
+    width: 960px
+
+  .block_medium
+    width: 265px
+    padding: 0 10px
+    display: block
+    float: left
+    
+  .block_large
+    width: 285px
+    padding: 0 10px
+    display: block
+    float: left
+    
+#footer
+  overflow: visible
+  width: 982px
+  display: block
+  margin: -3px 0 0 0
+  height: 120px
+  opacity: 0.5
+  background-color: $page_bkgd // Old browsers
+  +filter-gradient($hover, $page_bkgd, vertical) // IE6-9
+  +background-image(linear-gradient(top,  $hover 0%, $page_bkgd 100%))
