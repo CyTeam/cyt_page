@@ -1,0 +1,58 @@
+﻿#sidebar
+  width: 89px
+  opacity: 0.7
+  position: relative
+  float: left
+  margin-left: auto
+  margin-right: auto
+  border: 1px solid $border
+  background-color: $gradient_nav_dark // Old browsers
+  +filter-gradient($gradient_nav_light, $gradient_nav_dark, horizontal) // IE6-9
+  +background-image(linear-gradient(left,  $gradient_nav_light 0%,$gradient_nav_middle 55%,$gradient_nav_dark 100%))
+  font-weight: bold
+  text-transform: capitalize
+  +border-top-left-radius
+  +border-bottom-left-radius
+  +box-shadow
+
+  // elements
+  ul
+    display: table-row-group
+
+  li
+    display: block
+    border: 1px none $border
+    float: none
+    border-bottom-style: solid
+
+  .border-none
+    border-bottom-style: none
+
+  // hover
+  a:link,a:visited
+    display: block
+    padding: 19px 20px 18px
+    outline: none
+    color: #000000
+    text-decoration: none
+
+  a:hover,a:active
+    color: $hover_font
+    background-color: $hover
+
+  a:focus
+    color: #000000
+    color: $hover_font
+    background-color: $hover
+
+  a.rounded_top:hover
+    +border-top-left-radius 
+
+  a.rounded_top:focus,a.rounded_top:active
+    +border-top-left-radius
+
+  a.rounded_bottom:hover
+    +border-bottom-left-radius
+
+  a.rounded_bottom:focus,a.rounded_bottom:active
+    +border-bottom-left-radius

@@ -2,63 +2,50 @@
 #content
   overflow: visible
   width: 980px
-  height: 100%
   display: inline-block
-  background-color: $content_bkgd
-  border: 1px solid $border
-  border-top-style: none
-  border-bottom-style: none
-  padding-top: 1px
-  padding-bottom: 20px
+  // background-color: $content_bkgd
+  // border: 1px solid $border
+  // border-top-style: none
+  // border-bottom-style: none
+  // padding-top: 1px
+  // padding-bottom: 20px
 
   table
-    width: 980px
+    width: 1003px
     border-collapse: separate
-    border-spacing: 20px
-    margin: -20px 0
+    border-spacing: 10px
+    margin: -10px
 
   td
     border: 1px solid $border
     background-color: $content
-    padding: 0 10px
-    margin: 0
     vertical-align: top
     +box-shadow
     +border-radius
-  
-  .img
-    padding: 20px
-    margin: 20px
+    padding: 0 20px
+
+  .small
+    width: 321px
     
+  .medium
+    width: 642px
+    
+  .large
+    width: 963px
+    
+  .block
+    overflow: hidden
+    width: 290px
+    margin: 0 50px 0 0
+    display: block
+    float: left
+  
   .references
     height: 20px
     width: 138px
     padding: 0
     margin: 0
     overflow: hidden
-
-    
-  .small
-    width: 320px
-    padding: 0 20px
-    
-  .medium
-    width: 640px
- 
-  .large
-    width: 960px
-
-  .block_medium
-    width: 265px
-    padding: 0 10px
-    display: block
-    float: left
-    
-  .block_large
-    width: 285px
-    padding: 0 10px
-    display: block
-    float: left
     
 #footer
   overflow: visible
