@@ -4,46 +4,28 @@
     %meta{ :charset => "utf-8" }
     = favicon_link_tag ("favicon.ico")
     = stylesheet_link_tag("screen")
+    = javascript_include_tag :application
     %title
       cyt.ch GmbH
 
   %body
-    #gradient_top
+    #page_wrapper
+      #navigation
+        %ul.main
+          %li
+            = link_to "/", :class => "rounded_left" do
+              = image_tag("cyt_logo.png", :alt => "cyt Logo")
+          %li
+            = link_to "home", "/"
+          %li
+            = link_to "produkte", "/products"
+          %li
+            = link_to "team", "/team"
+          %li
+            = link_to "referenzen", "/references"
+        %ul.second
+          %li
+            = link_to "kontakt", "/contact", :class => "rounded_right"
 
-    #side_container
-      /
-        #sidebar_container
-          #sidebar
-            %ul.side
-              %li
-                %a.rounded_top{:href => "#punkt_a"} punkt a
-              %li
-                %a{:href => "#punkt_b"} punkt b
-              %li
-                %a{:href => "#punkt_c"} punkt c
-              %li.border-none
-                %a.rounded_bottom{:href => "#punkt_d"} punkt d
-
-      #main_container
-        #navigation
-          %ul.main
-            %li
-              = link_to "/", :class => "rounded_left" do
-                = image_tag("cyt_logo.png", :alt => "cyt Logo")
-            %li
-              = link_to "home", "/"
-            %li
-              = link_to "produkte", "/products"
-            %li
-              = link_to "team", "/team"            
-            %li
-              = link_to "referenzen", "/references"
-          %ul.second
-            %li
-              = link_to "kontakt", "/contact", :class => "rounded_right"
-
-        #content
-          = yield
-        /
-          #footer
-        
+      #content
+        = yield

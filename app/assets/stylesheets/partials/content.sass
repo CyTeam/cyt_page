@@ -1,59 +1,30 @@
 ﻿// content container
 #content
   overflow: visible
-  width: 980px
+  margin-top: 10px
+
+.line
   display: inline-block
-  // background-color: $content_bkgd
-  // border: 1px solid $border
-  // border-top-style: none
-  // border-bottom-style: none
-  // padding-top: 1px
-  // padding-bottom: 20px
+  margin-bottom: 10px
+  float: left
 
-  table
-    width: 1003px
-    border-collapse: separate
-    border-spacing: 10px
-    margin: -10px
-
-  td
-    border: 1px solid $border
-    background-color: $content
-    vertical-align: top
-    +box-shadow
-    +border-radius
-    padding: 0 20px
-
-  .small
-    width: 321px
-    
-  .medium
-    width: 642px
-    
-  .large
-    width: 963px
-    
-  .block
-    overflow: hidden
-    width: 290px
-    margin: 0 50px 0 0
-    display: block
-    float: left
-  
-  .references
-    height: 20px
-    width: 138px
-    padding: 0
-    margin: 0
-    overflow: hidden
-    
-#footer
-  overflow: visible
-  width: 982px
+.box
+  border: 1px solid $border
+  background-color: #fff
+  +box-shadow
+  +border-radius
   display: block
-  margin: -3px 0 0 0
-  height: 120px
-  opacity: 0.5
-  background-color: $page_bkgd // Old browsers
-  +filter-gradient($hover, $page_bkgd, vertical) // IE6-9
-  +background-image(linear-gradient(top,  $hover 0%, $page_bkgd 100%))
+  float: left
+  margin-right: 10px
+  
+.small
+  width: 261px
+  float: left
+  padding: 0 20px
+  margin: 0 5px
+
+.last
+  margin-right: 0
+
+.spacer
+  margin-right: 17px

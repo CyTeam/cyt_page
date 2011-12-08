@@ -1,14 +1,14 @@
 // navigation bar style
 #navigation
-  width: 980px
   height: 52px
   border: 1px solid $border
   background-color: $gradient_nav_dark // Old browsers
   +filter-gradient($gradient_nav_light, $gradient_nav_dark, vertical) // IE6-9
   +background-image(linear-gradient(top,  $gradient_nav_light 0%,$gradient_nav_middle 55%,$gradient_nav_dark 100%))
   font-weight: bold
+  font-color: 6f6f6f
   text-transform: capitalize
-  +border-radius 
+  +border-radius
   +box-shadow
 
   // elements
@@ -16,8 +16,9 @@
     display: inline
 
   li
-    display: inline
+    list-style: none
     border: 1px none $border
+    +text-shadow
 
   // logo
   .main img
@@ -42,7 +43,7 @@
     color: #000000
     text-decoration: none
 
-  a:hover,
+  a:hover
     color: $hover_font
     background-color: $hover
 
@@ -51,24 +52,23 @@
     color: $hover_font
     background-color: $hover
 
-  // rounded top corner for the help button
   a.rounded_right:hover
-    +border-top-right-radius 
+    +border-right-radius
 
   a.rounded_right:focus,a.rounded_right:active
     color: #000000
     color: $hover_font
     background-color: $hover
-    +border-top-right-radius 
+    +border-right-radius
 
-  a.rounded_left:hover 
+  a.rounded_left:hover
     background-color: $gradient_nav_dark // Old browsers
     +filter-gradient($gradient_nav_light, $gradient_nav_dark, vertical) // IE6-9
     +background-image(linear-gradient(top, $gradient_nav_light 0%,$gradient_nav_middle 55%,$gradient_nav_dark 100%))
-    +border-top-left-radius 
+    +border-left-radius
 
   a.rounded_left:focus,a.rounded_left:active
     background-color: $gradient_nav_dark // Old browsers
     +filter-gradient($gradient_nav_light, $gradient_nav_dark, vertical) // IE6-9
     +background-image(linear-gradient(top, $gradient_nav_light 0%,$gradient_nav_middle 55%,$gradient_nav_dark 100%))
-    +border-top-left-radius 
+    +border-left-radius
