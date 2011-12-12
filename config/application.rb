@@ -46,6 +46,6 @@ module CytPage
     config.assets.version = '1.0'
 
     # List of assets to precompile
-    config.assets.precompile += %w(screen.css)
+    config.assets.precompile += %w(screen.css favicon.ico)
   end
 end
