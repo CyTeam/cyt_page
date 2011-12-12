@@ -19,12 +19,22 @@
     list-style: none
     border: 1px none $border
     +text-shadow
-
-  // logo
-  .main img
+  
+  h1#logo
+    +replace-text('/assets/bookyt.png', 50%, 17px)
+    width: 102px
+    height: 52px
+    float: left
     padding: 0 20px
-    margin: -3px -20px -8px
-
+    border: 1px none $border
+    border-right-style: solid
+    margin: 0
+  
+    a
+      display: block
+      height: 52px
+      width: 102px
+  
   // main
   .main li
     float: left
@@ -36,29 +46,20 @@
     border-left-style: solid
 
   // hover
-  a:link,a:visited,a:focus
-    display: block
-    padding: 19px 20px 18px
-    outline: none
-    color: #000000
-    text-decoration: none
+  .second, .main
+    a:link,a:visited
+      display: block
+      padding: 19px 20px 18px
+      outline: none
+      color: #000000
+      text-decoration: none
 
-  a:hover
-    color: $hover_font
-    background-color: $hover
+      
+    a:hover,a:active,a:focus, li.selected a
+      color: $hover_font
+      background-color: $hover
 
-  a:focus,a:active
-    color: #000000
-    color: $hover_font
-    background-color: $hover
-
-  a.rounded_right:hover
-    +border-right-radius
-
-  a.rounded_right:focus,a.rounded_right:active
-    color: #000000
-    color: $hover_font
-    background-color: $hover
+  .second a:hover, .second li.selected a
     +border-right-radius
 
   a.rounded_left:hover
@@ -67,8 +68,3 @@
     +background-image(linear-gradient(top, $gradient_nav_light 0%,$gradient_nav_middle 55%,$gradient_nav_dark 100%))
     +border-left-radius
 
-  a.rounded_left:focus,a.rounded_left:active
-    background-color: $gradient_nav_dark // Old browsers
-    +filter-gradient($gradient_nav_light, $gradient_nav_dark, vertical) // IE6-9
-    +background-image(linear-gradient(top, $gradient_nav_light 0%,$gradient_nav_middle 55%,$gradient_nav_dark 100%))
-    +border-left-radius

@@ -6,26 +6,17 @@
     = stylesheet_link_tag("screen")
     = javascript_include_tag :application
     %title
-      cyt.ch GmbH
+      bookyt.ch
 
   %body
     #page_wrapper
       #navigation
-        %ul.main
-          %li
-            = link_to "/", :class => "rounded_left" do
-              = image_tag("cyt_logo.png", :alt => "cyt Logo")
-          %li
-            = link_to "home", "/"
-          %li
-            = link_to "produkte", "/products"
-          %li
-            = link_to "team", "/team"
-          %li
-            = link_to "referenzen", "/references"
-        %ul.second
-          %li
-            = link_to "kontakt", "/contact", :class => "rounded_right"
+        %h1#logo
+          = link_to "bookyt", root_path
+        = render_navigation(:context => :main)
+        = render_navigation(:context => :help)
 
       #content
         = yield
+
+      #empty

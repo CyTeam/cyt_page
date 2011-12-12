@@ -7,12 +7,42 @@
 
 #page_wrapper
   width: 960px
-  margin-left: auto
-  margin-right: auto
+  margin: 0 auto 20px auto
   overflow: visible
   position: relative
-  top: 10px
-
+  top: 10px  
+  
 h2
   border: 1px none $border
   border-bottom-style: solid
+
+input 
+  border: 1px solid $border
+  +border-radius
+  font: 100% arial,sans-serif
+  height: 25px
+
+textarea
+  border: 1px solid $border
+  +border-radius
+  height: 18px
+  font: 100% arial,sans-serif
+  resize: none
+  
+submit
+  border: 1px solid $border
+  background-color: $gradient_nav_dark // Old browsers
+  +filter-gradient($gradient_nav_light, $gradient_nav_dark, vertical) // IE6-9
+  +background-image(linear-gradient(top,  $gradient_nav_light 0%,$gradient_nav_middle 55%,$gradient_nav_dark 100%))
+  font-weight: bold
+  font-color: 6f6f6f
+  text-transform: capitalize
+  +border-radius
+  +box-shadow
+  
+submit:hover
+  display: block
+  padding: 19px 20px 18px
+  outline: none
+  color: #000000
+  text-decoration: none
