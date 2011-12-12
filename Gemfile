@@ -19,6 +19,13 @@ end
 
 gem 'jquery-rails'
 
+# Development
+# ===========
+group :development do
+  # Capistrano
+  gem 'capones_recipes'
+end
+
 # HAML integration
 gem 'haml-rails'
 gem 'compass', '>= 0.12.alpha.0'
