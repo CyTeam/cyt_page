@@ -13,25 +13,21 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.4'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'therubyracer'
 end
 
 gem 'jquery-rails'
 
+# Development
+# ===========
+group :development do
+  # Capistrano
+  gem 'capones_recipes'
+end
+
 # HAML integration
 gem 'haml-rails'
 gem 'compass', '>= 0.12.alpha.0'
-
-# To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
-
-# Use unicorn as the web server
-# gem 'unicorn'
-
-# Deploy with Capistrano
-# gem 'capistrano'
-
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   # Pretty printed test output
