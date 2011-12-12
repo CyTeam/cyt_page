@@ -44,5 +44,8 @@ module CytPage
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # List of assets to precompile
+    config.assets.precompile += %w(screen.css)
   end
 end
