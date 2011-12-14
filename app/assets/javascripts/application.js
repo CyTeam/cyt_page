@@ -9,5 +9,5 @@
 //= require_tree .
 
 $(document).ready(function(){
-  $(".line").equalHeights(true);
+//  $(".line").equalHeights(true);
 });
