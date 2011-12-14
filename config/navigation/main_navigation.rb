@@ -5,6 +5,7 @@ SimpleNavigation::Configuration.run do |navigation|
     primary.item :home, 'Home', root_path
     primary.item :features, 'Features', '/features'
     primary.item :references, 'Referenzen', '/references'
+    primary.item :help, 'Benutzerdoku', '/help/index'
   end
   
 end
