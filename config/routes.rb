@@ -50,6 +50,7 @@ CytPage::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'welcome#index'
   match ':action', :controller => :welcome
+  match 'help(/:action(/:id(.:format)))', :controller => :help
 
   # See how all your routes lay out with "rake routes"
 

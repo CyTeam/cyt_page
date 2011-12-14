@@ -1,0 +1,49 @@
+.line  
+  .box.last
+    .double
+      %h2
+        Anmeldung
+      %p
+        Melden Sie sich mit dem Benutzernamen und Passwort auf 
+        = link_to "IhrName.bookyt.ch", "http://IhrName.bookyt.ch"
+        an.
+        Damit Sie sich auf Ihrem Computer nicht jedes mal anmelden müssen, können Sie die Option "Angemeldet bleiben" wählen.
+      %div= image_tag 'help/login.png'
+      %p
+        Melden Sie sich mit dem Benutzernamen und Passwort auf 
+        = link_to "IhrName.bookyt.ch", "http://IhrName.bookyt.ch"
+        an.
+        Damit Sie sich auf Ihrem Computer nicht jedes mal anmelden müssen, können Sie die Option "Angemeldet bleiben" wählen.
+
+.line
+  .box.last
+    .text
+    .double.spacer
+      %h2
+        Kontakt
+      %p
+        Gerne kommen wir bei vorbei um Ihnen sämtliche Funktionen zu präsentieren.
+      %p
+        %form
+          %p
+            %input{ :placeholder => " Vorname", :style => "width: 294px" }
+            %input{ :placeholder => " Nachname", :style => "width: 294px" }
+          %p
+            %input{ :placeholder => " e-Mail", :style => "width: 594px" }
+          %p
+            %textarea{ :placeholder => " Nachricht", :style => "width: 594px; height: 120px" }
+          %p 
+            %input{ :type => "submit", :value => "absenden" }
+    .small
+      %h2
+        Adresse
+      %p
+        CyT GmbH
+      %p
+        Dorfstrasse 17
+      %p
+        6300 Zug
+      %p
+        041 544 47 60
+      %p
+        info@cyt.ch
